@@ -19,7 +19,6 @@ class Solution {
             } 
             if(!visited[i]) {
                 visited[i] = true;
-                //[80, 20], [50, 40], [30, 10]]
                 dfs(dungeons, k - dungeons[i][1], depth + 1); 
                 visited[i] = false;
             }
